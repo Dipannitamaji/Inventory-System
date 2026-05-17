@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS InventoryDB;
+USE InventoryDB;
+
+CREATE TABLE Inventory (
+    ProductID INT PRIMARY KEY AUTO_INCREMENT,
+    ProductName VARCHAR(100) NOT NULL,
+    Quantity INT NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL
+);
